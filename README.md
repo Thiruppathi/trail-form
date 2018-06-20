@@ -21,7 +21,7 @@ yarn install
 ### 2. How to run the application
 
 ```bash
-yarn start
+yarn dev
 ```
 
 #### 3. Run tests
@@ -37,11 +37,27 @@ To run testing using Chrome Browser
 yarn cypress
 ```
 
-
 ## Test Reports 
-[Test Report Video](https://thiruppathi.github.io/thiru-trail-form/cypress/videos/trail-form.spec.js.mp4)
 
-[Test Report HTML](https://thiruppathi.github.io/thiru-trail-form/mochawesome-report/mochawesome.html)
+| [![Test Report Video](cypress.gif)](https://youtu.be/VYhYG9YP16w) |
+| :------------------------------------------------------------------------------------------------------------------: |
+|                              **Thiru-Trail-Form - Test Suite Demo**                               |
+
+| [![Test Report HTML](mocha-report.png)](https://thiruppathi.github.io/trail-form/mochawesome-report/mochawesome.html) |
+| :------------------------------------------------------------------------------------------------------------------: |
+|                              **Thiru-Trail-Form - Test Suite Report**                               |
+
+
+
+## Light House Reports
+
+To check the quality, performance, a11y, best practices of the application, I've used Light House.
+
+![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=PWA)
+![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=BestPractices)
+![Lighthouse score: 96/100](https://lighthouse-badge.appspot.com/?score=96&compact&category=Performance)
+![Lighthouse score: 80/100](https://lighthouse-badge.appspot.com/?score=80&compact&category=SEO)
+![Lighthouse score: 80/100](https://lighthouse-badge.appspot.com/?score=80&compact&category=A11y)
 
 ## Technology Stack
 
