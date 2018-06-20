@@ -38,7 +38,8 @@ const renderField = ({
       touched && valid ? "valid" : ""
     }`}
   >
-    <label>{label}</label>
+    <label htmlFor={`${input.name}`}>{label}</label>
+
     <div className="input-wrapper">
       {type === "input" && (
         <input
