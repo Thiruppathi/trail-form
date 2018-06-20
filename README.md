@@ -41,7 +41,7 @@ yarn cypress
 ## Application Demo
 | [![Application Demo](public/img/logo-256.png)](https://thiru-trail-form.now.sh) |
 | :------------------------------------------------------------------------------------------------------------------: |
-|                              **Thiru-Trail-Form - Application Demo**                               |
+|                              **Thiru-Trail-Form - Application Demo**                           |
 
 
 ## Test Reports 
