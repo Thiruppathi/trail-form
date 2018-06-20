@@ -1,0 +1,247 @@
+body {
+  font-family: Roboto Mono, Arial, Helvetica, sans-serif;
+  letter-spacing: .0667em;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 20px 8px;
+  }
+}
+
+.App-logo {
+  /* animation: App-logo-spin infinite 20s linear; */
+  height: 80px;
+}
+
+.App-header {
+  height: 150px;
+  padding: 20px;
+  color: #355286;
+  position: relative;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+section {
+  padding: 5rem 0 8rem;
+  position: relative;
+  margin-top: 2vh;
+  margin-bottom: 10vh;
+}
+
+section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc((100vw - 100%) / -2);
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(27, 169, 225, .1);
+  transform: skewY(-2deg);
+  transform-origin: top left;
+  z-index: -1;
+}
+
+/* Form styles */
+
+::placeholder {
+  color: #4a6599;
+  opacity: 0.9;
+  font-family: Roboto Mono;
+}
+
+.trail-form {
+  max-width: 800px;
+  margin: 2em auto;
+}
+
+fieldset {
+  margin: 0;
+  padding: .35em 0 .75em;
+  border: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 5px;
+}
+
+.form-group label {
+  display: flex;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: right;
+  margin: 0.3em 0 0 0;
+  padding: 0.5em 1em 0.5em 0.7em;
+  width: auto;
+  min-width: 80px;
+  justify-content: flex-end;
+  color: #355286;
+}
+
+.form-group .field {
+  flex: 1 1 auto;
+  display: block;
+  border: 1px solid #355286;
+  margin: 0.3em 0 0 0;
+  padding: 0.5em 1em 0.5em 0.7em;
+  color: #355286;
+  font-size: 1em;
+  line-height: 2;
+  transition: opacity 0.3s;
+  font-family: Roboto Mono;
+}
+
+.form-group textarea {
+  min-height: 100px;
+}
+
+.invalid .input-wrapper .field {
+  border: 2px solid #f3666b;
+  background: url(./error.svg) no-repeat #f5d8d5 14px 7px;
+  background-position: right 5px bottom 5px;
+  background-size: 20px;
+  line-height: 20px;
+}
+
+.valid .input-wrapper .field {
+  border: 2px solid #44c4a1;
+  background: url(./tick.svg) no-repeat #f2fffc 14px 7px;
+  background-position: right 5px bottom 5px;
+  background-size: 20px;
+  line-height: 20px;
+}
+
+.input-wrapper .field[disabled] {
+  opacity: .2;
+  pointer-events: none;
+}
+
+button {
+  margin: 5px;
+  white-space: nowrap;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: 1px solid #285f8f;
+  cursor: pointer;
+  background-color: #fff;
+  color: #504e4e;
+  box-shadow: inset 0 -3px 0 0 #504e4e;
+  transition: background-color .25s ease-out, transform .1s ease-out;
+  font-weight: 400;
+  font-family: Roboto Mono;
+  letter-spacing: .0667em;
+}
+
+button:focus,
+button:hover {
+  background-color: #eee;
+}
+
+button[type='submit']:focus,
+button[type='submit']:hover {
+  background-color: #3c5e98;
+}
+
+button[type='submit'] {
+  white-space: nowrap;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 20px 45px;
+  font-size: 20px;
+  border: 1px solid #285f8f;
+  cursor: pointer;
+  background-color: #4e75b9;
+  color: #fff;
+  box-shadow: inset 0 -3px 0 0 #355286;
+  transition: background-color .25s ease-out, transform .1s ease-out;
+  font-weight: 400;
+  font-family: Roboto Mono;
+  letter-spacing: .0667em;
+  position: relative;
+}
+
+button[type='submit'][disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.error-msg {
+  text-align: left;
+  color: #fff;
+  padding: 10px 0 10px 10px;
+  background: #f3666b;
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+ 
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  width: 25px;
+  height: 25px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-top-color: #4e75b9;
+  animation: spinner .6s linear infinite;
+}
+
+/* left: 12%;
+    width: 25px;
+    height: 25px;
+    margin-top: 0px;
+    margin-left: -10px;
+    border-radius: 50%; */
+
+
+@media (max-width: 600px) {
+  .form-group {
+    flex-direction: column;
+  }
+  .form-group .field {
+    margin-top: 2px;
+  }
+  .form-group label {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+}
