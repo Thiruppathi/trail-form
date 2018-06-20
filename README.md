@@ -1,4 +1,5 @@
 # React-Redux-Form
+[Live Demo](https://thiru-trail-form.now.sh)
 
 ## Task
 Please build a responsive form. The form should include a `Name`, `Email` and `Message` field.
@@ -37,11 +38,18 @@ To run testing using Chrome Browser
 yarn cypress
 ```
 
+## Application Demo
+| [![Application Demo](public/img/logo-256.png)](https://thiru-trail-form.now.sh) |
+| :------------------------------------------------------------------------------------------------------------------: |
+|                              **Thiru-Trail-Form - Application Demo**                               |
+
+
 ## Test Reports 
 
 | [![Test Report Video](cypress.gif)](https://youtu.be/VYhYG9YP16w) |
 | :------------------------------------------------------------------------------------------------------------------: |
-|                              **Thiru-Trail-Form - Test Suite Demo**                               |
+|                              **Thiru-Trail-Form - Test Suite Demo**                           |
+
 
 | [![Test Report HTML](mocha-report.png)](https://thiruppathi.github.io/trail-form/mochawesome-report/mochawesome.html) |
 | :------------------------------------------------------------------------------------------------------------------: |
@@ -79,7 +87,7 @@ To check the quality, performance, a11y, best practices of the application, I've
   - [Flaticon](https://www.flaticon.com/)
 
 
-## Assumption
+## Assumptions
 - No need of Backend
 - Delayed Form Submission - Simulation with `setTimeout`
 - Freedom to choose Testing Methodology
