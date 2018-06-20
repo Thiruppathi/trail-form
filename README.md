@@ -1,10 +1,8 @@
-It was setup with [create-react-app](https://github.com/facebook/create-react-app)
-
-The project already includes a setup for react with redux and thunk.
+# React-Redux-Form
 
 ## Task
-Please build a responsive form. The form should include a Name, EMail and Message field.
-The labels should be next to the inputs on a big screen and above on a small screen (<= 600px).
+Please build a responsive form. The form should include a `Name`, `Email` and `Message` field.
+The labels should be next to the inputs on a big screen and above on a small screen `(<= 600px)`.
 
 When the user submits the form, sending of the data should be simulated with a timeout. While sending a loading indicator should be shown and all inputs must not be accessible.
 
@@ -70,4 +68,4 @@ yarn cypress
 - Delayed Form Submission - Simulation with `setTimeout`
 - Freedom to choose Testing Methodology
 - Freedom to choose additional library (Redux-Form)
-- 
+- It was setup with [create-react-app](https://github.com/facebook/create-react-app)
