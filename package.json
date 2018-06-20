@@ -10,10 +10,12 @@
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
     "redux-form": "^7.4.2",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "serve": "^9.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve --single ./build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
@@ -22,5 +24,8 @@
   },
   "devDependencies": {
     "mochawesome": "^3.0.2"
+  },
+  "now": {
+    "alias": "thiru-trail-form"
   }
 }
